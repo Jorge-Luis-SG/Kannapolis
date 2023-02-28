@@ -25,7 +25,7 @@
       height: 370px;
       padding: 3rem 0px;
       background: white;
-
+      border-radius: 1rem;
       h5 {
         font-weight: 400;
         font-size: 1.1rem;
@@ -139,6 +139,7 @@
     }
   }
   .box2 {
+    overflow: hidden;
     &-item {
       width: 380px;
       height: 540px;
@@ -150,6 +151,15 @@
       border-radius: 1.65rem;
       @media screen and (max-width: 1520px) {
         width: 340px;
+      }
+      @media screen and (max-width: 767px) {
+        width: 290px;
+        height: 470px;
+      }
+      @media screen and (max-width: 425px) {
+        width: 205px;
+        height: 395px;
+
       }
       &::before {
         content: "";
@@ -169,6 +179,12 @@
           width: 530px;
           left: -85px;
         }
+        @media screen and (max-width: 767px) {
+          width: 490px;
+        }
+        @media screen and (max-width: 425px) {
+          width: 415px;
+        }
       }
       .card {
         position: absolute;
@@ -177,6 +193,12 @@
         border: none;
         @media screen and (max-width: 1520px) {
           width: 230px;
+        }
+        @media screen and (max-width: 767px) {
+          width: 200px;
+        }
+        @media screen and (max-width: 425px) {
+          width: 160px;
         }
         &:first-child {
           top: 0;
