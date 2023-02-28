@@ -1,0 +1,193 @@
+.row {
+  height: calc(100vh - 285px);
+  @media screen and (max-width: 992px) {
+    height: 100%;
+  }
+  .box1 {
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+      @media screen and (max-width: 1520px) {
+        font-size: 2.7rem;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 2.4rem;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 2.2rem;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+    .buyMint {
+      max-width: 370px;
+      height: 370px;
+      padding: 3rem 0px;
+      background: white;
+
+      h5 {
+        font-weight: 400;
+        font-size: 1.1rem;
+      }
+      .select {
+        width: 235px;
+        border-radius: 2rem;
+        border: 1px solid #81a1ff;
+        padding-left: 1rem;
+        background-color: #f0f7ff;
+
+        select {
+          width: 195px;
+          padding: 0.6rem 0;
+          border-radius: 1.5rem;
+          background: transparent;
+          border: none;
+          outline: none;
+          &:active {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+      .pay {
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        p {
+          font-weight: bold;
+          cursor: pointer;
+          span {
+            position: relative;
+            width: 30px;
+            background: blue;
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              margin: auto;
+              width: 8px;
+              height: 1.5px;
+              background-color: red;
+            }
+            &::before {
+              transform: rotateZ(50deg) translateY(3px);
+            }
+            &::after {
+              transform: rotateZ(-50deg) translateY(3px);
+            }
+          }
+        }
+        .coin {
+          padding: 0.4rem 0;
+          cursor: pointer;
+          &:hover {
+            background-color: #00000020;
+          }
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+        .boxpay {
+          height: 30px;
+          margin-top: 1rem;
+          .coin {
+            opacity: 0;
+            pointer-events: none;
+          }
+          &.buyActive {
+            height: auto;
+            transition: all 0.5s;
+            background-color: #f0f7ff;
+            padding: 1rem 2rem;
+            p {
+              width: 125px;
+              transition: all 0.5s;
+            }
+            .coin {
+              opacity: 1;
+              pointer-events: all;
+              transition: all 0.7s;
+            }
+          }
+        }
+      }
+      .text-final {
+        width: 80%;
+      }
+    }
+    .buyBtn {
+      background: rgb(98, 247, 223);
+      background: linear-gradient(
+        242deg,
+        rgba(98, 247, 223, 1) 14%,
+        rgba(72, 181, 206, 1) 100%
+      );
+      text-decoration: none;
+      border-radius: 1.5rem;
+      color: white;
+      display: block;
+      width: 185px;
+      text-align: center;
+      padding: 0.65rem 0;
+      margin: 2rem auto;
+    }
+  }
+  .box2 {
+    &-item {
+      width: 380px;
+      height: 540px;
+      margin: auto;
+      background-image: url(../../../assets/images/cards/bgcards.png);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      border-radius: 1.65rem;
+      @media screen and (max-width: 1520px) {
+        width: 340px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: -175px;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        width: 750px;
+        height: 670px;
+        background-image: url(../../../assets/images/cards/capa.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 1520px) {
+          width: 530px;
+          left: -85px;
+        }
+      }
+      .card {
+        position: absolute;
+        background: transparent;
+        width: 260px;
+        border: none;
+        @media screen and (max-width: 1520px) {
+          width: 230px;
+        }
+        &:first-child {
+          top: 0;
+          left: -60px;
+          z-index: 90;
+        }
+        &:last-child {
+          bottom: 0;
+          right: -10px;
+        }
+      }
+    }
+  }
+}

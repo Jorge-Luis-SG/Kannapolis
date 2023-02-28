@@ -1,0 +1,27 @@
+footer {
+  padding: 3rem 9rem;
+  @media screen and (max-width: 1650px) {
+    padding: 3rem 7rem;
+  }
+  @media screen and (max-width: 1300px) {
+    padding: 3rem 5rem;
+  }
+  @media screen and (max-width: 992px) {
+    padding: 3rem 3rem;
+  }
+  .box1 {
+    color: #003c5e;
+    font-size: 1.1rem;
+  }
+  .box2 {
+    max-width: 205px;
+    margin-left: auto;
+    color: #003c5e;
+    font-size: 1.1rem;
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 0 0.3rem;
+    }
+  }
+}

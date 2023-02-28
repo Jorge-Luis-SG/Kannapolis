@@ -1,0 +1,38 @@
+header {
+  padding: 3rem 9rem;
+  @media screen and (max-width: 1650px) {
+    padding: 3rem 7rem;
+  }
+  @media screen and (max-width: 1300px) {
+    padding: 3rem 5rem;
+  }
+  @media screen and (max-width: 992px) {
+    padding: 3rem 3rem;
+  }
+  img {
+    @media screen and (max-width: 992px) {
+      width: 200px;
+      object-fit: contain;
+    }
+  }
+  .menu {
+    a {
+      text-decoration: none;
+      border: 1px solid #003c5e;
+      color: #003c5e;
+      height: 45px;
+      width: 150px;
+      border-radius: 1rem;
+      @media screen and (max-width: 992px) {
+        height: 39px;
+        width: 135px;
+        font-size: .85rem;
+      }
+
+      &:last-child {
+        background-color: #003c5e;
+        color: white;
+      }
+    }
+  }
+}

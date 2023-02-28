@@ -1,0 +1,41 @@
+<app-header></app-header>
+<main class="container-fluid">
+  <section class="row align-items-center">
+    <div class="col-12 col-lg-6 box1">
+      <h1 class="text-center">Compra tu NFT<br class="d-none d-md-block"> investment en <span>Kannapoliz</span> </h1>
+      <div class="buyMint d-flex flex-column justify-content-center align-items-center mx-auto">
+        <h5>Empieza tu inversion con Kannapoliz</h5>
+        <div class="select mt-3">
+          <select name="package" id="package">
+            <option value="value1" select>Paquete 1 - {{pkg1}}$</option>
+            <option value="value2">Paquete 2 - {{pkg2}}$</option>
+          </select>
+        </div>
+        <div class="pay select2 mt-3">
+          <h5 class="text-center">Token de pago</h5>
+          <div [class.buyActive]="coin" (click)="coinActive()" class="boxpay">
+            <p class="text-uppercase d-flex align-items-center justify-content-between"><img
+                src="./assets/images/icons-logo/{{coinData}}.svg" alt="BUSD">{{coinData}} <span></span> </p>
+            <div class="coin text-uppercase d-flex align-items-center justify-content-center" id="coin1"><img
+                src="./assets/images/icons-logo/busd.svg" alt="BUSD">busd </div>
+            <div class="coin text-uppercase d-flex align-items-center justify-content-center" id="coin2"><img
+                src="./assets/images/icons-logo/usdt.svg" alt="BUSD">usdt</div>
+            <div class="coin text-uppercase d-flex align-items-center justify-content-center" id="coin3"><img
+                src="./assets/images/icons-logo/bnb.svg" alt="BUSD">bnb</div>
+          </div>
+        </div>
+        <p class="text-final mt-3 text-center">Recibe hasta un 200% de tu inversión en 365 días</p>
+      </div>
+      <a href="#" class="buyBtn">
+        Comprar
+      </a>
+    </div>
+    <div class="col-12 col-lg-6 box2 d-flex justify-content-center align-items-center">
+      <div class="box2-item">
+        <img class="card" src="./assets/images/cards/card1.png">
+        <img class="card" src="./assets/images/cards/card2.png">
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="257.835" height="36.059" viewBox="0 0 257.835 36.059">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.845" y1="-0.31" x2="-0.058" y2="1.811" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4a83bf"/>
+      <stop offset="1" stop-color="#4d5da2"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_92" data-name="Grupo 92" transform="translate(-1160.118 -59.063)">
+    <g id="Grupo_58" data-name="Grupo 58">
+      <g id="Grupo_57" data-name="Grupo 57">
+        <rect id="Rectángulo_21" data-name="Rectángulo 21" width="123.373" height="35.309" rx="13.185" transform="translate(1294.581 59.438)" fill="url(#linear-gradient)"/>
+        <rect id="Rectángulo_22" data-name="Rectángulo 22" width="123.373" height="35.309" rx="13.185" transform="translate(1160.493 59.438)" fill="none" stroke="#163c5e" stroke-width="0.75"/>
+        <text id="Add_Network" data-name="Add Network" transform="translate(1222.179 81.325)" fill="#173d5e" font-size="12" font-family="Gotham-Book, Gotham"><tspan x="-39" y="0">Add Network</tspan></text>
+      </g>
+      <text id="Wallet_Connect" data-name="Wallet Connect" transform="translate(1356.267 81.325)" fill="#fff" font-size="12" font-family="Gotham-Medium, Gotham" font-weight="500"><tspan x="-46" y="0">Wallet Connect</tspan></text>
+    </g>
+  </g>
+</svg>
